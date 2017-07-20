@@ -55,6 +55,6 @@ key <RWIN> {        [ NoSymbol              ]       };
 
 1. Open a browser on a computer on the same network as the Pi and go to http://t1.local:1880.
 2. Click the "hamburger" menu in top right, point to *Import* and then click *Clipboard*.
-3. Copy the contents of t1.flow and paste it in the text area. Click *Import* and click anywhere in the flow to drop all drop all the imported nodes into the flow.
+3. Copy the contents of [t1.flow](https://raw.githubusercontent.com/villeman/terminals/master/t1.flow) and paste it in the text area. Click *Import* and click anywhere in the flow to drop all drop all the imported nodes into the flow.
 4. Click *Deploy* to deploy the code. Done!
 5. SSH into the PI and run command `rm -rf ~/.config/chromium/Singleton*` to prevent "profile in use" message from Chromium. Then reboot the Pi with `sudo reboot` and the Pi should restart into the chat page, ready to go. That's all!
