@@ -32,7 +32,7 @@ Note that the Pi *must* be connected to a network with access to the internet du
 
 ### Installing node.js and Node RED
 
-1. Copy and paste the following command into the SSH session with your Pi to automatically install both node.js and Node RED: `bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)` (**please note:** this process will probably take 10-20 minutes depending on your internet connection!)
+1. Copy and paste the following command into the SSH session with your Pi to automatically install both node.js and Node RED: `bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)` (**please note:** this process will probably take 10-20 minutes depending on the speed of your internet connection!)
 2. Set Node RED to autostart: `sudo systemctl enable nodered.service`
 
 ### Set FullPageOS browser URL
@@ -71,6 +71,6 @@ key <RWIN> {        [ NoSymbol              ]       };
 
 1. Open a browser on a computer connected to the same network as the Pi and go to http://t1.local:1880.
 2. Click the "hamburger" menu in top right, point your cursor to *Import* and then click *Clipboard*.
-3. Copy the contents of [t1.flow](https://raw.githubusercontent.com/villeman/terminals/master/t1.flow) and paste it in the text area. Click *Import* and then click anywhere in the flow to drop all drop all the imported nodes into the flow. (For additional terminals after the first one, copy the contents of [tx.flow](https://raw.githubusercontent.com/villeman/terminals/master/tx.flow) instead.)
+3. Copy the contents of [t1.flow](https://raw.githubusercontent.com/vtamm/terminals/master/t1.flow) and paste it in the text area. Click *Import* and then click anywhere in the flow to drop all drop all the imported nodes into the flow. (For additional terminals after the first one, copy the contents of [tx.flow](https://raw.githubusercontent.com/vtamm/terminals/master/tx.flow) instead.)
 4. Click *Deploy* to deploy the code. Done!
 5. SSH into the PI and run command `rm -rf ~/.config/chromium/Singleton*` to prevent "profile in use" message from Chromium. Then reboot the Pi with `sudo reboot` and the Pi should restart into the chat page, ready to go. That's all!
