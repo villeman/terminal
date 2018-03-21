@@ -67,7 +67,7 @@ key <RCTL> {        [ NoSymbol              ]       };
 key <RWIN> {        [ NoSymbol              ]       };
 ```
 
-### Import the terminal flow (code) to Node RED and start chat server
+### Import the terminal flow (code) to Node RED and start chat server/client
 
 1. Open a browser on a computer connected to the same network as the Pi and go to http://t1.local:1880.
 2. Click the "hamburger" menu in top right, point your cursor to *Import* and then click *Clipboard*.
