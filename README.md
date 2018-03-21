@@ -23,6 +23,8 @@ Note that the Pi *must* be connected to a network with access to the internet du
 
 ## Configuration
 
+All the following steps should be done on the Pi while logged in via SSH.
+
 ### raspi-config settings
 
 1. Run `sudo raspi-config`.
