@@ -5,7 +5,7 @@ Follow the instructions below to set up the first and any additional terminals. 
 ## Installation
 
 1. Download [FullPageOS](http://docstech.net/FullPageOS/2017-06-24_2017-06-21-fullpageos-jessie-lite-0.7.0.zip) (direct download link).
-2. Unzip the image and "burn" it to an SD card [like any other Raspberry Pi image].(https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+2. Unzip the image and "burn" it to an SD card [like any other Raspberry Pi image](https://www.raspberrypi.org/documentation/installation/installing-images/README.md).
 3. Before ejecting the SD card from the computer used to burn the image, configure the wi-fi connection for FullPageOS by editing `fullpageos-network.txt` at the root of the flashed card. (Of course the wi-fi can be configured or updated later by plugging the SD card into any computer again.)
 4. Insert the SD card into a Raspberry Pi and connect the Pi to a power adapter (and network cable if you didn't configure wi-fi in step 3).
 5. Log into the Pi via SSH: `ssh pi@fullpageos.local` (default password is "raspberry").
