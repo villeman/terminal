@@ -17,13 +17,11 @@ Note that the Pi *must* be connected to a network with access to the internet du
 2. Unzip the image and "burn" it to an SD card [like any other Raspberry Pi image](https://www.raspberrypi.org/documentation/installation/installing-images/README.md).
 3. Before ejecting the SD card from the computer used to burn the image, configure the wi-fi connection for FullPageOS by editing `fullpageos-network.txt` on the root of the flashed card. (Of course the wi-fi settings can be configured or updated later by plugging the micro SD card into any computer again.)
 4. Insert the micro SD card into a Raspberry Pi and connect the Pi to a power adapter (and network cable if you didn't configure wi-fi in step 3).
-5. Log into the Pi via SSH: `ssh pi@fullpageos.local` (default password is "raspberry").
+5. Wait a moment for the Pi to start and then log on to the Pi via SSH: `ssh pi@fullpageos.local` (default password is "raspberry").
 
-**Please note:** The address `fullpageos.local` is only available if your router supports Bonjour. If you can't connect to the Pi using the command in step 5 above, log in to your router and determine the Pi's assigned IP address in the router's list of connected devices, then replace the `fullpageos.local` with the IP address.
+**Please note:** The address `fullpageos.local` is only available if your router supports Bonjour. If you can't connect to the Pi using the command in step 5, log in to your router and determine the Pi's assigned IP address in the router's list of connected devices, then replace `fullpageos.local` with the IP address.
 
 ## Configuration
-
-All the following steps should be done on the Pi while logged in via SSH.
 
 ### raspi-config settings
 
@@ -41,7 +39,7 @@ All the following steps should be done on the Pi while logged in via SSH.
 
 Open `/boot/fullpageos.txt` with `vi`, `vim` or `nano` (i.e. `nano /boot/fullpageos.txt`) and replace the URL in this file with: `http://t1.local:1880/chat?id=1`. (When setting up additional terminals, change `?id=1` to `?id=2`, `?id=3`, etc.)
 
-**Please note:** If your router doesn't support Bonjour as mentioned under Installation above, you need to replace `t1.local` in the URL with the IP address that was assigned to the *first* terminal in your setup.
+**Please note:** If your router doesn't support Bonjour as mentioned above, you will need to replace `t1.local` in the URL with the IP address that was assigned to the *first* terminal in your setup.
 
 ### Set keyboard layout to Swedish and disable modifier keys
 
