@@ -14,9 +14,9 @@ Note that the Pi *must* be connected to a network with access to the internet du
 ## Installation
 
 1. Download [FullPageOS](http://docstech.net/FullPageOS/2017-06-24_2017-06-21-fullpageos-jessie-lite-0.7.0.zip) (direct download link).
-2. Unzip the image and "burn" it to an SD card [like any other Raspberry Pi image](https://www.raspberrypi.org/documentation/installation/installing-images/README.md).
-3. Before ejecting the SD card from the computer used to burn the image, configure the wi-fi connection for FullPageOS by editing `fullpageos-network.txt` on the root of the flashed card. (Of course the wi-fi settings can be configured or updated later by plugging the micro SD card into any computer again.)
-4. Insert the micro SD card into a Raspberry Pi and connect the Pi to a power adapter (and network cable if you didn't configure wi-fi in step 3).
+2. Unzip the image and "burn" it to your Micro SD card [like any other Raspberry Pi image](https://www.raspberrypi.org/documentation/installation/installing-images/README.md).
+3. Before ejecting the Micro SD card from the computer, configure the wi-fi connection for FullPageOS by editing `fullpageos-network.txt` on the root of the flashed card. (Of course this can be configured or updated later by plugging the micro SD card into any computer again.)
+4. Insert the Micro SD card into a Raspberry Pi and connect the Pi to a power adapter (and network cable if you didn't configure wi-fi in step 3).
 5. Wait a moment for the Pi to start and then log on to the Pi via SSH: `ssh pi@fullpageos.local` (default password is "raspberry").
 
 **Please note:** The address `fullpageos.local` is only available if your router supports Bonjour. If you can't connect to the Pi using the command in step 5, log in to your router and determine the Pi's assigned IP address in the router's list of connected devices, then replace `fullpageos.local` with the IP address.
