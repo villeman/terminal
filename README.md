@@ -6,10 +6,10 @@ Follow the instructions below to set up the first and any additional terminals. 
 
 * Raspberry Pi 3 with built-in wi-fi
 * Micro SD card (minimum 4 GB) and an adapter to insert the card into a computer
-* A computer (for burning the OS image onto Micro SD card and configuring network settings)
+* A computer with SSH client
 * A network with DHCP and preferably Bonjour
 
-Note that the Pi must be connected to a network with access to the internet during the installation steps below. When all steps are completed the Pi can be disconnected and connected to a closed network. (Don't forget to change network settings on the micro SD card if needed, see step 3 under Installation.)
+Note that the Pi must be connected to a network with access to the internet during the installation steps below! When all steps have been completed, the Pi can be disconnected and connected to a closed network. (Don't forget to change network settings on the micro SD card if needed, see step 3 under Installation.)
 
 ## Installation
 
