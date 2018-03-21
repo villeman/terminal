@@ -7,17 +7,17 @@ Follow the instructions below to set up the first and any additional terminals. 
 * Raspberry Pi 3 with built-in wi-fi
 * Micro SD card (minimum 4 GB) and an adapter to insert the card into a computer
 * A computer with SSH client (all Macs have the Terminal app, on Windows you can use PuTTY)
-* A network with DHCP enabled (and preferably Bonjour as well)
+* A DHCP-enabled network (preferably with Bonjour as well)
 
-Note that the Pi *must* be connected to a network with access to the internet during the installation steps below! When all steps have been completed, the Pi can be disconnected and connected to a closed network. (Don't forget to change network settings on the micro SD card if needed, see step 3 under Installation.)
+**Important!** While most of this setup can be done offline, the Pi *must* be connected to a network with access to the internet for the installation of node.js and Node RED.
 
 ## Installation
 
 1. Download [FullPageOS](http://docstech.net/FullPageOS/2017-06-24_2017-06-21-fullpageos-jessie-lite-0.7.0.zip) (direct download link).
 2. Unzip the image and "burn" it to your Micro SD card [like any other Raspberry Pi image](https://www.raspberrypi.org/documentation/installation/installing-images/README.md).
-3. Before ejecting the Micro SD card from the computer, configure the wi-fi connection for FullPageOS by editing `fullpageos-network.txt` on the root of the flashed card. (Of course this can be configured or updated later by plugging the micro SD card into any computer again.)
+3. Before ejecting the Micro SD card from the computer, configure the wi-fi connection for FullPageOS by editing `fullpageos-network.txt` on the root of the flashed card. (This can of course be configured or updated later by plugging the micro SD card into any computer again.)
 4. Insert the Micro SD card into a Raspberry Pi and connect the Pi to a power adapter (and network cable if you didn't configure wi-fi in step 3).
-5. Wait a moment for the Pi to start and then log on to the Pi via SSH: `ssh pi@fullpageos.local` (default password is "raspberry").
+5. Wait a moment for the Pi to boot and then log on to the Pi via SSH: `ssh pi@fullpageos.local` (default password is "raspberry").
 
 **Please note:** The address `fullpageos.local` is only available if your router supports Bonjour. If you can't connect to the Pi using the command in step 5, log in to your router and determine the Pi's assigned IP address in the router's list of connected devices, then replace `fullpageos.local` with the IP address.
 
@@ -32,8 +32,8 @@ Note that the Pi *must* be connected to a network with access to the internet du
 
 ### Installing node.js and Node RED
 
-1. Copy and paste the following command into the SSH session with your Pi to automatically install both node.js and Node RED: `bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)` (**please note:** this process will probably take 10-20 minutes depending on the speed of your internet connection!)
-2. Set Node RED to autostart: `sudo systemctl enable nodered.service`
+1. Copy and paste the following command into the SSH session with your Pi to automatically install both node.js and Node RED: `bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)` (**Heads up!** This process will probably take 10-20 minutes depending on the speed of your internet connection.)
+2. When installation is completed, set Node RED to autostart: `sudo systemctl enable nodered.service`
 
 ### Set FullPageOS browser URL
 
