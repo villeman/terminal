@@ -27,7 +27,7 @@ Follow the instructions below to set up the first and any additional terminals. 
 
 1. Run `sudo raspi-config`.
 2. Select option 1 and change password to something other than "raspberry" (you need to relaunch raspi-config after this step)
-3. Select option 2 and set hostname of machine to `t1`. (For additional terminals set hostname to `t2`, `t3`, etc.)
+3. Select option 2 and set hostname of machine to `t1`. (For additional terminals set hostname to `t2`, `t3`, etc. Also be aware that this changes the `.local` address you use to SSH into the Pi)
 4. Select option 4, then on the next screen option 1 and then locate `sv_SE.UTF-8 UTF-8` in the list, press <kbd>Space</kbd> to select it and then <kbd>Return</kbd> to continue. When prompted on the next screen, choose `en_GB.UTF-8` as the system default.
 
 ### Installing node.js and Node RED
@@ -69,7 +69,7 @@ key <RWIN> {        [ NoSymbol              ]       };
 
 ### Import the terminal flow (code) to Node RED and start chat server/client
 
-1. Open a browser on a computer connected to the same network as the Pi and go to http://t1.local:1880.
+1. Open a browser on a computer connected to the same network as the Pi and go to http://t1.local:1880. (If you are setting up an additional terminal change `t1` in this address to `t2` or whatever the hostname is for the terminal you are configuring.)
 2. Click the "hamburger" menu in top right, point your cursor to *Import* and then click *Clipboard*.
 3. Copy the contents of [t1.flow](https://raw.githubusercontent.com/vtamm/terminals/master/t1.flow) and paste it in the text area. Click *Import* and then click anywhere in the flow to drop all drop all the imported nodes into the flow. (For additional terminals after the first one, copy the contents of [tx.flow](https://raw.githubusercontent.com/vtamm/terminals/master/tx.flow) instead.)
 4. Click *Deploy* to deploy the code. Done!
